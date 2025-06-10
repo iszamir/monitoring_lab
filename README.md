@@ -32,9 +32,9 @@ monitoring-lab/
 
 ## Steps
 1.  **Launch Services**:
-   ```bash
    docker-compose up -d
-2. Verify Components:
+
+3. Verify Components:
 
 Prometheus: http://<server-ip>:9090
 Grafana: http://<server-ip>:3000 (admin/admin)
@@ -46,7 +46,7 @@ Add Prometheus data source (URL: http://prometheus:9090)
 Import dashboard ID 1860 (Node Exporter Full)
 
 ## Sample Queries
-```promql
+promql
 # Memory Usage
 (node_memory_MemTotal_bytes - node_memory_MemFree_bytes) / node_memory_MemTotal_bytes * 100
 
@@ -77,3 +77,5 @@ curl -s http://localhost:9090/-/healthy && echo "Prometheus OK" || echo "Error"
 
 ## Cleanup instructions
 docker-compose down -v  # Stops and removes containers
+
+
