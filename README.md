@@ -1,24 +1,5 @@
 # Prometheus + Grafana Monitoring Lab
 
-## Architecture
-+---------------------+
-|   VMware Ubuntu     |
-| +-----------------+ |
-| |  node_exporter  |←[Metrics]
-| | (9100)          | |
-| +--------↑--------+ |
-|          |           |
-| +--------┴--------+ |
-| |   Prometheus    | |
-| | (9090)          |←[Dashboard]
-| +--------↑--------+ |
-|          |           |
-| +--------┴--------+ |
-| |     Grafana     | |
-| | (3000)          | |
-| +-----------------+ |
-+---------------------+
-
 ### **Folder Structure for Documentation**
 monitoring-lab/
 ├── screenshots/
